@@ -5,7 +5,7 @@
     background-color: var(--gray-200);
     padding-block: 72px 144px;
 
-    header{
+    header {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -21,12 +21,14 @@
         color: var(--gray-500);
         font: var(--text-sm);
     }
-    img{
+
+    img {
         width: 306px;
         height: 156px;
         object-fit: cover;
         border-radius: 8px;
     }
+
     figure {
         display: grid;
         grid-template-columns: 330px 330px 330px;
@@ -34,7 +36,7 @@
         gap: 24px;
     }
 
-    #card{
+    #card {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -43,12 +45,126 @@
         padding: 12px 12px 17px;
         border-radius: 12px;
 
-        figcaption{
+        figcaption {
             padding: 4px;
 
-            h4{
+            h4 {
                 margin-bottom: 4px;
             }
         }
+
+        &:hover{
+            border: 1.5px solid var(--gray-400);
+        }
     }
+}
+
+#services {
+    background-color: var(--gray-100);
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 88px 120px;
+    gap: 56px;
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+
+        h2{
+            color: var(--red);
+        }
+    }
+
+    figure{
+        display: flex;
+        gap: 24px;
+        align-items: center;
+    }
+
+    figcaption {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+
+        padding: 20px;
+        border: 2px solid var(--gray-200);
+        border-radius: 12px;
+
+        p{
+            font: var(--text-sm);
+            color: var(--gray-500);
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+}
+
+#contact{
+    background-image: url(../assets/images/Background_Contacts.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 787px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding-block: 128px 200px;
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+
+        h2{
+            color: var(--purple);
+        }
+
+        p{
+            font: var(--text-md);
+            color: var(--gray-500);
+        }
+    }
+
+    #links{
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+
+            width: 400px;
+            background-color: var(--gray-300);
+            border-radius: 8px;
+            padding: 20px;
+
+            &:hover{
+                border: 1.5px solid var(--blue);
+            }
+        }
+
+        span{
+            flex-grow: 1;
+            color: var(--gray-500);
+        }
+    }
+
 }
