@@ -31,6 +31,10 @@
     --text-md: 400 16px/140% var(--font-maven);
     --text-sm: 400 14px/140% var(--font-maven);
 }
+html{
+    display: flex;
+    justify-content: center;
+}
 body {
     background-color: var(--gray-200);
     display: flex;
@@ -39,17 +43,30 @@ body {
     max-width: 1366px;
 }
 
+h1, h2, h3, h4{
+    color: var(--gray-600);
+}
+
 h1 {
     font: var(--title-lg);
-    color: var(--gray-600);
 }
 
 h2 {
     font: var(--subtitle);
-    color: var(--gray-500);
+}
+
+h3 {
+    font: var(--title-md);
+}
+
+h4 {
+    font: var(--title-sm);
 }
 
 ul {
     list-style: none;
 }
 
+section {
+    padding-inline: 120px;
+}
